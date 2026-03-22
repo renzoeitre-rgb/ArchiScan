@@ -17,6 +17,18 @@ This is my first-ever open-source project on GitHub.
 - **Zero F***s Given:** Break it, steal the logic, or refactor it into something else. I just wanted to build something that actually works. If it helps you, awesome.
 
 ---
+### ⚠️ WORD OF CAUTION: Token Usage & Scaling
+ArchiScan is a powerful, deep-scanning tool, but it is **hungry for tokens**. 
+
+- **The Stress Test:** During development, this tool was tested on a project with **250+ files and ~45,000 lines of code**. 
+- **The Bill:** That single audit consumed approximately **200,000 tokens** using the Gemini 3.1 Flash model.
+- **How it works:** ArchiScan indexes everything you select, prunes comments to save space, and then "Lego-batches" files in groups of 15 to the AI.
+- **Recommendation:** 
+    - **Do NOT** run this on massive, million-line enterprise projects unless you have a deep wallet.
+    - **Avoid** using expensive models (like Claude 4.6 ) for the initial full-project sweep unless necessary.
+    - **Pro Tip:** Use the **Free Tier of Google AI Studio (Gemini API)**. It works brilliantly, handles the volume, and won't cost you a cent. 
+
+---
 
 ### 🔥 Killer Features
 - **Lego Batching:** Bundles violations to save you money and API tokens.
