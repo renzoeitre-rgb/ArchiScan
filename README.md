@@ -4,6 +4,10 @@
 
 This is a browser-based workbench that audits your projects against strict architectural "Laws." It uses a 3-pass precision engine (Regex + AI + Senior Judge) to find logic leaks, structural debt, and framework misuse.
 
+![ArchiScan Project Discovery](index_files.png)
+
+![ArchiScan Project Analysis](project_analysis.png)
+
 ---
 
 ### 📢 A Note from the Author
